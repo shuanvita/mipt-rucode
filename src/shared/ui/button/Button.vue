@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type ButtonVariant = 'primary' | 'secondary' | 'link' | 'custom'
+type ButtonVariant = 'primary' | 'secondary' | 'custom'
 
 withDefaults(
   defineProps<{
@@ -20,12 +20,12 @@ withDefaults(
 )
 
 const baseClasses =
-  'group focus-visible:outline-ring cursor-pointer inline-flex items-center justify-center gap-1.5 rounded-md text-[13px] tracking-widest transition-colors duration-200 focus-visible:outline-1 focus-visible:outline-offset-1 disabled:pointer-events-none disabled:opacity-30'
+  'group focus-visible:outline-ring uppercase cursor-pointer inline-flex items-center justify-center gap-1.5 rounded-[45px] tracking-widest transition-colors duration-200 focus-visible:outline-1 focus-visible:outline-offset-1 disabled:pointer-events-none disabled:opacity-30'
 
 const variants: Record<ButtonVariant, string> = {
-  primary: 'px-4 py-2 bg-primary hover:bg-primary/90 text-fg-primary font-medium',
-  secondary: 'px-3 py-2 border border-stroke bg-secondary hover:border-primary/40 font-medium',
-  link: 'px-3 py-2',
+  primary: 'px-7 py-3 bg-btn-primary hover:bg-btn-primary-hover text-black font-extrabold',
+  secondary:
+    'px-7 py-3 ring-1 ring-btn-primary hover:bg-btn-primary hover:text-dark-primary text-btn-primary font-extrabold',
   custom: '',
 }
 </script>
