@@ -13,6 +13,12 @@ export default defineNuxtConfig({
     },
   },
 
+  fonts: {
+    families: [
+      { name: 'Montserrat', weights: [300, 400, 500, 600, 700, 800, 900] },
+    ],
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
@@ -21,6 +27,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'nuxt-svgo',
     '@vueuse/nuxt',
+    'nuxt-swiper',
   ],
 
   srcDir: './src',
