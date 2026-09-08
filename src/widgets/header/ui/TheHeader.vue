@@ -12,7 +12,7 @@ defineProps<{
       <NuxtImg width="167" height="110" class="w-full" src="logo.svg" />
     </NuxtLink>
 
-    <div class="flex items-center gap-6">
+    <div class="items-center gap-6 hidden lg:flex">
       <nav class="flex gap-6" aria-label="Основная навигация">
         <NuxtLink
           class="first:text-yellow-primary hover:text-yellow-secondary text-[11px] leading-[1.2] font-bold tracking-widest uppercase"
