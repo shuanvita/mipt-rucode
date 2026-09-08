@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { HomePage } from '@/pages/home'
-definePageMeta({ headerConfig: 'home' })
+import { Award2026 } from '@/pages/award2026'
+definePageMeta({ headerConfig: 'award' })
 useHead({
   title: 'Всероссийский фестиваль по искусственному интеллекту и алгоритмическому программированию',
   meta: [
@@ -24,5 +24,5 @@ useHead({
 </script>
 
 <template>
-  <HomePage />
+  <Award2026 />
 </template>

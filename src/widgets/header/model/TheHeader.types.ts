@@ -1,0 +1,17 @@
+export interface NavLink {
+  href: string
+  title: string
+}
+
+export interface HeaderConfig {
+  links: NavLink[]
+  cta: {
+    label: string
+    to?: string
+    variant?: 'primary' | 'secondary' | 'custom'
+    class?: string
+    hasDropdown?: boolean
+  }
+}
+
+export type HeaderConfigKey = 'home' | 'award'
