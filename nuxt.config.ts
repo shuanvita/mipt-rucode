@@ -14,9 +14,7 @@ export default defineNuxtConfig({
   },
 
   fonts: {
-    families: [
-      { name: 'Montserrat', weights: [300, 400, 500, 600, 700, 800, 900] },
-    ],
+    families: [{ name: 'Montserrat', weights: [300, 400, 500, 600, 700, 800, 900] }],
   },
 
   modules: [
