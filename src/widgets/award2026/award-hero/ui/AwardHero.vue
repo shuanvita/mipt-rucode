@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// TODO Изображение должно быть avif или webp. Проверить настройки.
+</script>
 
 <template>
   <section class="grid items-center gap-10 lg:grid-cols-[489px_1fr]">
