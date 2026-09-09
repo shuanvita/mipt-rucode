@@ -11,6 +11,7 @@ export interface HeaderConfig {
     variant?: 'primary' | 'secondary' | 'custom'
     class?: string
     hasDropdown?: boolean
+    items?: NavLink[]
   }
 }
 

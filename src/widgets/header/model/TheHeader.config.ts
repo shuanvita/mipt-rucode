@@ -9,7 +9,16 @@ export const headerConfigs: Record<HeaderConfigKey, HeaderConfig> = {
       { href: '#video', title: 'Видео' },
       { href: '#participate', title: 'Хочу участвовать' },
     ],
-    cta: { label: 'Мероприятия', hasDropdown: true },
+    cta: {
+      label: 'Мероприятия',
+      hasDropdown: true,
+      items: [
+        { href: '/testing', title: 'Тестирование' },
+        { href: '/championship', title: 'Чемпионат по ИИ' },
+        { href: '/premium', title: 'RUCODE.Премия' },
+        { href: '/algorithmic', title: 'Алгоритмическое программирование' },
+      ],
+    },
   },
   award: {
     links: [
