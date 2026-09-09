@@ -7,7 +7,7 @@ defineProps<{
 }>()
 
 const classes: Record<HeadingTag, string> = {
-  h1: 'text-[22px] sm:text-[30px] md:text-[38px]',
+  h1: 'text-[20px] sm:text-[24px] md:text-[38px] lg:text-[46px] leading-[1.2]',
   h2: 'text-[20px] sm:text-[28px] md:text-[36px]',
   h3: 'text-[20px] sm:text-[24px] md:text-[32px]',
   h4: 'text-[15px] sm:text-[18px] md:text-[24px]',
@@ -19,7 +19,7 @@ const classes: Record<HeadingTag, string> = {
 <template>
   <component
     :is="tag"
-    :class="['leading-[1.1] font-black tracking-wider uppercase', classes[as ?? tag]]"
+    :class="['leading-[1.1] font-bold tracking-wider uppercase', classes[as ?? tag]]"
   >
     <slot />
   </component>

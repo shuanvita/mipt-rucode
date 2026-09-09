@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { TheHeader, headerConfigs } from '~/widgets/header'
+import type { HeaderConfigKey } from '~/widgets/header'
 
 const route = useRoute()
-const headerKey = (route.meta.headerConfig as string) ?? 'home'
+const headerKey = (route.meta.headerConfig as HeaderConfigKey) ?? 'home'
 const config = headerConfigs[headerKey] ?? headerConfigs.home
 </script>
 
