@@ -17,6 +17,8 @@
   --color-footer: #141516;
 
   --participant-card-bg: linear-gradient(0deg, rgba(181, 89, 245, 0.09), rgba(181, 89, 245, 0.09)), linear-gradient(104.95deg, rgba(202, 255, 51, 0.05) -32.77%, rgba(202, 255, 51, 0) 27.02%), url('/images/award2026/participants-bg.png');
+  --cta-bg: linear-gradient(267.5deg, rgba(181, 89, 245, 0.09) 38.7%, rgba(181, 89, 245, 0.1) 40.67%, rgba(28, 28, 28, 0) 99.81%), linear-gradient(106.06deg, rgba(202, 255, 51, 0.05) -29.45%, rgba(202, 255, 51, 0) 27.86%), url('/images/award2026/participants-bg.png');
+
 }
 
 @layer base {

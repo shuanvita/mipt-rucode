@@ -16,7 +16,7 @@ const cards = [
 </script>
 
 <template>
-  <section class="flex flex-col space-y-8 lg:space-y-11">
+  <section class="container flex flex-col space-y-8 lg:space-y-11">
     <UiHeading class="max-w-[250px] lg:max-w-[340px]" tag="h2">Зачем участвовать?</UiHeading>
     <ul class="grid gap-6 md:grid-cols-2 lg:gap-10 xl:grid-cols-2">
       <li

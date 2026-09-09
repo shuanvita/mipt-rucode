@@ -65,7 +65,7 @@ const faqData = [
 </script>
 
 <template>
-  <section class="space-y-6 lg:space-y-10">
+  <section class="container space-y-6 lg:space-y-10">
     <UiHeading class="text-purple-primary text-left lg:text-center" tag="h2"
       >Вы спрашиваете, мы отвечаем</UiHeading
     >

@@ -10,7 +10,7 @@ const categories = [
 
 <template>
   <section
-    class="relative flex flex-col items-center lg:items-start space-y-5 overflow-hidden lg:space-y-8 lg:overflow-visible"
+    class="relative container flex flex-col items-center space-y-5 overflow-hidden lg:items-start lg:space-y-8 lg:overflow-visible"
   >
     <UiHeading class="max-w-[280px] text-center lg:max-w-[340px] lg:text-left" tag="h2"
       >Кто может участвовать?</UiHeading
@@ -28,21 +28,21 @@ const categories = [
         </li>
       </ul>
     </div>
-<!--    <div role="presentation" aria-hidden="true" class="pointer-events-none select-none">-->
-<!--      <NuxtImg-->
-<!--        src="/images/award2026/cloud.png"-->
-<!--        alt=""-->
-<!--        loading="lazy"-->
-<!--        class="absolute top-1/2 left-0 z-0 aspect-square w-[590px] max-w-max -translate-1/2"-->
-<!--      />-->
+    <!--    <div role="presentation" aria-hidden="true" class="pointer-events-none select-none">-->
+    <!--      <NuxtImg-->
+    <!--        src="/images/award2026/cloud.png"-->
+    <!--        alt=""-->
+    <!--        loading="lazy"-->
+    <!--        class="absolute top-1/2 left-0 z-0 aspect-square w-[590px] max-w-max -translate-1/2"-->
+    <!--      />-->
 
-<!--      <NuxtImg-->
-<!--        src="/images/award2026/cloud.png"-->
-<!--        alt=""-->
-<!--        loading="lazy"-->
-<!--        class="absolute top-0 right-0 z-0 aspect-square w-[590px] max-w-max translate-1/2 rotate-70 not-sm:-translate-y-1/5 sm:bottom-0"-->
-<!--      />-->
-<!--    </div>-->
+    <!--      <NuxtImg-->
+    <!--        src="/images/award2026/cloud.png"-->
+    <!--        alt=""-->
+    <!--        loading="lazy"-->
+    <!--        class="absolute top-0 right-0 z-0 aspect-square w-[590px] max-w-max translate-1/2 rotate-70 not-sm:-translate-y-1/5 sm:bottom-0"-->
+    <!--      />-->
+    <!--    </div>-->
   </section>
 </template>
 
