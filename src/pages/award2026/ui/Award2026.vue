@@ -2,6 +2,7 @@
 import { AwardHero } from '~/widgets/award2026/award-hero'
 import { AwardAbout } from '~/widgets/award2026/award-about'
 import { AwardParticipants } from '~/widgets/award2026/award-participants'
+import { WhyParticipate } from '~/widgets/award2026/why-participate'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import { AwardParticipants } from '~/widgets/award2026/award-participants'
     <AwardHero />
     <AwardAbout />
     <AwardParticipants />
+    <WhyParticipate />
   </div>
 </template>
 

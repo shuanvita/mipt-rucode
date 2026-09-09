@@ -10,7 +10,7 @@ const categories = [
 
 <template>
   <section
-    class="relative flex flex-col items-center space-y-5 overflow-hidden lg:space-y-8 lg:overflow-visible"
+    class="relative flex flex-col items-center lg:items-start space-y-5 overflow-hidden lg:space-y-8 lg:overflow-visible"
   >
     <UiHeading class="max-w-[280px] text-center lg:max-w-[340px] lg:text-left" tag="h2"
       >Кто может участвовать?</UiHeading
