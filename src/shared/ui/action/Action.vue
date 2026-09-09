@@ -28,12 +28,13 @@ const isLink = computed(() => !!props.to)
 const tag = computed(() => (isLink.value ? resolveComponent('NuxtLink') : 'button'))
 
 const baseClasses =
-  'group focus-visible:outline-ring uppercase cursor-pointer inline-flex items-center justify-center gap-1.5 rounded-[45px] tracking-widest transition-colors duration-200 focus-visible:outline-1 focus-visible:outline-offset-1 disabled:pointer-events-none disabled:opacity-30'
+  'group focus-visible:outline-ring cursor-pointer inline-flex items-center justify-center gap-1.5 rounded-[45px] tracking-widest transition-colors duration-200 focus-visible:outline-1 focus-visible:outline-offset-1 disabled:pointer-events-none disabled:opacity-30'
 
 const variants: Record<Variant, string> = {
-  primary: 'px-6 py-3 bg-btn-primary hover:bg-btn-primary-hover text-black font-bold text-[12px]',
+  primary:
+    'px-6 py-3 bg-btn-primary hover:bg-btn-primary-hover text-black font-bold text-[12px] uppercase ',
   secondary:
-    'px-6 py-3 ring-1 ring-btn-primary hover:bg-btn-primary hover:text-dark-primary text-btn-primary font-extrabold',
+    'px-6 py-3 ring-1 ring-btn-primary hover:bg-btn-primary hover:text-dark-primary text-btn-primary font-extrabold uppercase ',
   custom: '',
 }
 
