@@ -1,7 +1,7 @@
 <script setup lang="ts">
 type TextTag = 'p' | 'span' | 'div'
 type TextSize = 'xs' | 'sm' | 'base' | 'lg'
-type TextWeight = 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold' | 'black'
+type TextWeight = 'light' | 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold' | 'black'
 
 withDefaults(
   defineProps<{
@@ -22,10 +22,11 @@ const sizeClasses: Record<TextSize, string> = {
   xs: 'text-xs',
   sm: 'text-sm',
   base: 'text-[12px] sm:text-[14px] md:text-[16px] tracking-[0.8px]',
-  lg: 'text-[16px]',
+  lg: 'text-[16px] lg:text-[18px] tracking-[0.8px]',
 }
 
 const weightClasses: Record<TextWeight, string> = {
+  light: 'font-light',
   normal: 'font-normal',
   medium: 'font-medium',
   semibold: 'font-semibold',

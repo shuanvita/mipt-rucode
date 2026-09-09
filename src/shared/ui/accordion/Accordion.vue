@@ -27,18 +27,18 @@ function onToggle() {
     <button
       :aria-controls="contentId"
       type="button"
-      class="focus-visible:outline-ring hover:text-purple-light flex w-full cursor-pointer items-center justify-between gap-4 px-7 py-6 text-[20px] font-semibold transition-colors duration-200 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-1 disabled:pointer-events-none disabled:opacity-40"
+      class="focus-visible:outline-ring hover:text-purple-light flex w-full cursor-pointer justify-between gap-4 px-6 py-4 font-bold text-[16] transition-colors duration-200 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-1 disabled:pointer-events-none disabled:opacity-40 lg:items-center lg:px-7 lg:py-6 lg:text-[20px]"
       :aria-expanded="isOpen"
       :disabled="disabled"
       @click="onToggle"
     >
-      <span>{{ title }}</span>
+      <span class="text-left">{{ title }}</span>
 
       <slot name="icon" :is-open="isOpen">
         <UiSvg
           :name="icon"
           :class="[
-            'text-purple-light shrink-0 transition-transform duration-200',
+            'text-purple-light max-w-6 shrink-0 transition-transform duration-200 lg:max-w-[50px]',
             iconSize,
             isOpen && 'rotate-45',
           ]"
@@ -52,7 +52,7 @@ function onToggle() {
       :style="{ gridTemplateRows: isOpen ? '1fr' : '0fr' }"
     >
       <div class="overflow-hidden" :inert="!isOpen">
-        <div class="px-7 pb-4 text-[18px]">
+        <div class="px-7 pb-4 text-[18px] font-light">
           <slot />
         </div>
       </div>
