@@ -1,6 +1,4 @@
-<script setup lang="ts">
-// TODO Изображение должно быть avif или webp. Проверить настройки.
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <section class="container grid items-center gap-10 lg:grid-cols-[489px_1fr]">
@@ -10,7 +8,7 @@
         пространстве науки и технологий</UiHeading
       >
       <NuxtPicture
-        class="h-auto w-full object-contain lg:hidden"
+        class="h-auto w-full flex justify-center object-contain lg:hidden"
         src="/images/award2026/hero-mob.png"
         alt="Rucode Festival"
         width="458"
@@ -23,11 +21,9 @@
       >
     </div>
     <NuxtPicture
-      class="hidden h-auto w-full object-contain lg:block"
+      class="hidden h-auto w-full object-contain lg:flex lg:justify-center"
       src="/images/award2026/hero.png"
       alt=""
-      width="732"
-      height="606"
     />
   </section>
 </template>

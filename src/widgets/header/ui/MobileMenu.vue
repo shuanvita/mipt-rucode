@@ -91,7 +91,7 @@ onKeyStroke('Escape', () => {
 
         <UiAction
           v-else
-          class="mt-6"
+          class="mt-6 w-auto"
           :to="config.cta.to"
           :variant="config.cta.variant ?? 'primary'"
           @click="close"

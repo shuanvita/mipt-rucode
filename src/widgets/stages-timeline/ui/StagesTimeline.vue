@@ -30,7 +30,7 @@ const stages: StageCardTypes[] = [
     <NuxtPicture
       src="/images/award2026/firework.png"
       alt=""
-      class="pointer-events-none absolute right-0 bottom-20 z-0 w-[270px] lg:-right-20 lg:bottom-12 lg:w-[320px]"
+      class="pointer-events-none absolute -right-25 bottom-25 z-0 w-[270px] lg:-right-20 lg:bottom-12 lg:w-[320px]"
     />
   </section>
 </template>
