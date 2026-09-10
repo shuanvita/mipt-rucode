@@ -19,15 +19,17 @@ function selectTab(index: number) {
 
 <template>
   <div>
-    <div class="flex gap-2">
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-11">
       <button
         v-for="(item, index) in props.items"
         :key="index"
         type="button"
         :disabled="item.disabled"
-        class="rounded-xl px-4 py-2 transition cursor-pointer"
+        class="text-[24px] min-w-[305px] lg:min-w-auto cursor-pointer font-extrabold tracking-[5%] rounded-[45px] uppercase py-3 px-11 lgpx-12"
         :class="[
-          activeTab === index ? 'bg-purple-light text-white' : 'bg-gray-100 text-gray-600',
+          activeTab === index
+            ? 'bg-(image:--stage-secret-gradient)'
+            : 'bg-(image:--participant-card-bg)',
           item.disabled && 'cursor-not-allowed opacity-40',
         ]"
         @click="selectTab(index)"
@@ -36,7 +38,7 @@ function selectTab(index: number) {
       </button>
     </div>
 
-    <div class="mt-4">
+    <div class="mt-10">
       <slot :index="activeTab" />
     </div>
   </div>

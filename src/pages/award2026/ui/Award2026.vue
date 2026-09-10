@@ -8,6 +8,7 @@ import { AwardCta } from '~/widgets/award2026/award-cta'
 import { AwardPartners } from '~/widgets/award2026/award-partners'
 import { PeopleSlider } from '~/widgets/people-slider'
 import { StagesTimeline } from '~/widgets/stages-timeline'
+import { NominationsTabs } from '~/widgets/award2026/nominations-tabs'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import { StagesTimeline } from '~/widgets/stages-timeline'
     <AwardAbout />
     <AwardParticipants />
     <WhyParticipate />
+    <NominationsTabs />
     <StagesTimeline />
     <PeopleSlider />
     <AwardPartners />
@@ -23,5 +25,3 @@ import { StagesTimeline } from '~/widgets/stages-timeline'
     <AwardFaq class="mb-10 lg:mb-15" />
   </div>
 </template>
-
-<style scoped></style>
