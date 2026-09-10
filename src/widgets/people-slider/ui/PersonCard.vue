@@ -6,9 +6,9 @@ defineProps<Person>()
 
 <template>
   <article class="relative flex flex-col items-center overflow-hidden">
-    <div class="relative mb-8 h-[180px] w-[180px]">
-      <UiSvg class="absolute top-2 -right-6 h-[113px] w-24" name="slider-dotted" />
-      <UiSvg class="absolute top-0 -left-2 h-[50px] w-[50px]" name="slider-circle" />
+    <div class="relative mb-8 h-45 w-45">
+      <UiSvg class="absolute top-2 -right-6 h-28.25 w-24" name="slider-dotted" />
+      <UiSvg class="absolute top-0 -left-2 h-12.5 w-12.5" name="slider-circle" />
       <NuxtPicture
         :img-attrs="{
           class:
