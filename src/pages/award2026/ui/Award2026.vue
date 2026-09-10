@@ -5,6 +5,7 @@ import { AwardParticipants } from '~/widgets/award2026/award-participants'
 import { WhyParticipate } from '~/widgets/award2026/why-participate'
 import { AwardFaq } from '~/widgets/award2026/award-faq'
 import { AwardCta } from '~/widgets/award2026/award-cta'
+import { AwardPartners } from '~/widgets/award2026/award-partners'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import { AwardCta } from '~/widgets/award2026/award-cta'
     <AwardAbout />
     <AwardParticipants />
     <WhyParticipate />
+    <AwardPartners />
     <AwardCta />
     <AwardFaq class="mb-10 lg:mb-15" />
   </div>

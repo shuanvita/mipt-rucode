@@ -1,0 +1,1 @@
+export { default as AwardPartners } from './ui/AwardPartners.vue'
