@@ -17,7 +17,7 @@ const icons: Record<string, Component> = Object.fromEntries(
 
 const icon = computed(() => {
   const found = icons[props.name]
-  if (!found) console.warn(`[VSvg] SVG not found: ${props.name}`)
+  if (!found) console.warn(`[UiSvg] SVG not found: ${props.name}`)
   return found ?? null
 })
 

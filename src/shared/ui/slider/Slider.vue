@@ -31,7 +31,7 @@ const swiperParams = computed(() => ({
   ...props.options,
 }))
 
-// useSwiper даёт доступ к инстансу для ручного управления (кнопки, индикаторы и т.п.)
+
 const swiper = useSwiper(containerRef, swiperParams.value)
 
 defineExpose({ swiper })
