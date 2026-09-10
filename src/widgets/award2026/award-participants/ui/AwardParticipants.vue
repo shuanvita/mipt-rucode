@@ -29,17 +29,17 @@ const categories = [
       </ul>
     </div>
     <div role="presentation" aria-hidden="true" class="pointer-events-none select-none">
-      <NuxtImg
+      <NuxtPicture
         src="/images/award2026/cloud.png"
         alt=""
         loading="lazy"
-        class="absolute hidden lg:block top-70 left-55 lg:-top-[330px] lg:-left-[200px] z-0 w-[590px]"
+        class="absolute top-70 left-55 z-0 hidden w-[590px] lg:-top-[330px] lg:-left-[200px] lg:block"
       />
-      <NuxtImg
+      <NuxtPicture
         src="/images/award2026/cloud.png"
         alt=""
         loading="lazy"
-        class="absolute hidden lg:block top-0 right-0 lg:top-[260px] lg:-right-[210px] z-0 w-[590px] rotate-70"
+        class="absolute top-0 right-0 z-0 hidden w-[590px] rotate-70 lg:top-[260px] lg:-right-[210px] lg:block"
       />
     </div>
   </section>

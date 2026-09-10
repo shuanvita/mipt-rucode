@@ -13,7 +13,7 @@ const [isMenuOpen, toggleMenu] = useToggle(false)
 <template>
   <header class="container flex max-w-300 items-center justify-between px-10 pt-6">
     <NuxtLink class="max-w-25 lg:max-w-31" to="/">
-      <NuxtImg width="167" height="110" src="logo.svg" alt="Rucode Festival logo" />
+      <NuxtPicture width="167" height="110" src="logo.svg" alt="Rucode Festival logo" />
     </NuxtLink>
 
     <div class="hidden items-center gap-6 lg:flex">

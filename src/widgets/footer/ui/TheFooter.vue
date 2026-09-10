@@ -28,7 +28,7 @@ const socials = [
       class="container grid place-items-center gap-10 lg:grid-cols-[144px_auto_258px_107px] lg:place-items-start lg:items-start lg:gap-12"
     >
       <NuxtLink class="order-1 lg:order-0 lg:col-start-1" to="/">
-        <NuxtImg
+        <NuxtPicture
           class="max-w-36"
           width="144"
           height="144"

@@ -24,13 +24,13 @@ const stages: StageCardTypes[] = [
 <template>
   <section class="relative container space-y-5 lg:space-y-10">
     <UiHeading class="text-purple-primary text-center" tag="h2">Этапы проведения</UiHeading>
-    <div class="grid gap-5 lg:gap-7 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
       <StageCard v-for="stage in stages" :key="stage.number" v-bind="stage" />
     </div>
-    <NuxtImg
+    <NuxtPicture
       src="/images/award2026/firework.png"
       alt=""
-      class="pointer-events-none w-[270px] lg:w-[320px] absolute right-0 bottom-20 lg:-right-20 lg:bottom-12 z-0"
+      class="pointer-events-none absolute right-0 bottom-20 z-0 w-[270px] lg:-right-20 lg:bottom-12 lg:w-[320px]"
     />
   </section>
 </template>

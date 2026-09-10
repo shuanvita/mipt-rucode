@@ -25,7 +25,7 @@ defineProps<PartnerNominationCard>()
       </div>
 
       <div class="flex flex-col gap-3">
-        <NuxtImg :src="partner.logo" :alt="partner.name" class="h-20 w-20 object-contain" />
+        <NuxtPicture :src="partner.logo" :alt="partner.name" class="h-20 w-20 object-contain" />
         <UiText weight="bold" class="text-[18px] uppercase">
           {{ partner.role }}
         </UiText>
