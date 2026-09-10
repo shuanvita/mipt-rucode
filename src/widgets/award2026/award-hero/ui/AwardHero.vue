@@ -9,7 +9,7 @@
         >Премия <span class="text-yellow-primary">RuCode:</span> искусственный интеллект в
         пространстве науки и технологий</UiHeading
       >
-      <NuxtImg
+      <NuxtPicture
         class="h-auto w-full object-contain lg:hidden"
         src="/images/award2026/hero-mob.png"
         alt="Rucode Festival"
