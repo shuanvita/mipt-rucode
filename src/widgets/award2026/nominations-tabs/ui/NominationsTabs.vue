@@ -122,7 +122,7 @@ const categories: Category[] = [
 </script>
 
 <template>
-  <section class="relative container flex flex-col items-center space-y-8 lg:space-y-15">
+  <section class="relative z-10 container flex flex-col items-center space-y-8 lg:space-y-15">
     <UiHeading class="text-purple-primary text-center" tag="h2">Направления и номинации</UiHeading>
     <UiTabs :items="categories">
       <template #default="{ index }">
@@ -154,13 +154,13 @@ const categories: Category[] = [
       src="/images/award2026/geometry-1.png"
       alt=""
       loading="lazy"
-      class="absolute -z-9 lg:z-0 w-[592px] blur-[2px] top-15 -left-45 lg:-top-[300px] lg:-left-[280px]"
+      class="absolute top-15 -left-45 -z-999 w-[592px] blur-[2px] lg:-top-[300px] lg:-left-[310px]"
     />
     <NuxtPicture
       src="/images/award2026/geometry-2.png"
       alt=""
       loading="lazy"
-      class="absolute hidden -z-999 w-[592px] blur-[2px] lg:top-[400px] lg:-right-[420px] lg:block"
+      class="absolute -z-999 hidden w-[592px] blur-[2px] lg:top-[400px] lg:-right-[420px] lg:block"
     />
   </section>
 </template>
