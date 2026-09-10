@@ -62,7 +62,7 @@ const sliderOptions = {
 </script>
 
 <template>
-  <section class="container flex flex-col items-center space-y-5 lg:space-y-10">
+  <section class="relative container flex flex-col items-center space-y-5 lg:space-y-10">
     <UiHeading class="text-purple-primary text-center" tag="h2">Организационный комитет</UiHeading>
     <UiText class="max-w-[584px] text-center"
       >Определяет номинантов Премии по итогам отборочного тура. Оказывает содействие в привлечении
@@ -91,6 +91,9 @@ const sliderOptions = {
         <UiSvg name="arrow-right" />
       </button>
     </div>
+    <div
+      class="pointer-events-none absolute top-0 left-0 z-0 h-[453px] w-[515px] -translate-x-1/3 -translate-y-1/3 rounded-full bg-[#5E4877] blur-[217.35px]"
+    />
   </section>
 </template>
 

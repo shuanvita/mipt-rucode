@@ -9,7 +9,7 @@ const config = headerConfigs[headerKey] ?? headerConfigs.home
 </script>
 
 <template>
-  <div class="flex flex-col space-y-8">
+  <div class="flex flex-col space-y-8 overflow-hidden">
     <TheHeader :config="config" />
     <main>
       <slot />

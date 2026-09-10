@@ -22,6 +22,10 @@
   --stage-secret-gradient: linear-gradient(106deg, rgba(202, 255, 51, 0.05) -29.45%, rgba(202, 255, 51, 0.00) 27.86%), linear-gradient(267deg, rgba(181, 89, 245, 0.20) 0.15%, rgba(181, 89, 245, 0.15) 40.67%, rgba(255, 255, 255, 0.10) 99.81%), url('/images/award2026/participants-bg.png');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     font-size: var(--default-font-size);

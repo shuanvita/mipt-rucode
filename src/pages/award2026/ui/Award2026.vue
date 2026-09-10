@@ -14,13 +14,13 @@ import { NominationsTabs } from '~/widgets/award2026/nominations-tabs'
 <template>
   <div class="space-y-15">
     <AwardHero />
-    <AwardAbout />
+    <AwardAbout id="premium" />
     <AwardParticipants />
     <WhyParticipate />
-    <NominationsTabs />
-    <StagesTimeline />
-    <PeopleSlider />
-    <AwardPartners />
+    <NominationsTabs id="nominations" />
+    <StagesTimeline id="stages" />
+    <PeopleSlider id="committee" />
+    <AwardPartners id="partners" />
     <AwardCta />
     <AwardFaq class="mb-10 lg:mb-15" />
   </div>

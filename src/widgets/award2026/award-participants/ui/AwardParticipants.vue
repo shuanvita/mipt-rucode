@@ -28,21 +28,20 @@ const categories = [
         </li>
       </ul>
     </div>
-    <!--    <div role="presentation" aria-hidden="true" class="pointer-events-none select-none">-->
-    <!--      <NuxtImg-->
-    <!--        src="/images/award2026/cloud.png"-->
-    <!--        alt=""-->
-    <!--        loading="lazy"-->
-    <!--        class="absolute top-1/2 left-0 z-0 aspect-square w-[590px] max-w-max -translate-1/2"-->
-    <!--      />-->
-
-    <!--      <NuxtImg-->
-    <!--        src="/images/award2026/cloud.png"-->
-    <!--        alt=""-->
-    <!--        loading="lazy"-->
-    <!--        class="absolute top-0 right-0 z-0 aspect-square w-[590px] max-w-max translate-1/2 rotate-70 not-sm:-translate-y-1/5 sm:bottom-0"-->
-    <!--      />-->
-    <!--    </div>-->
+    <div role="presentation" aria-hidden="true" class="pointer-events-none select-none">
+      <NuxtImg
+        src="/images/award2026/cloud.png"
+        alt=""
+        loading="lazy"
+        class="absolute hidden lg:block top-70 left-55 lg:-top-[330px] lg:-left-[200px] z-0 w-[590px]"
+      />
+      <NuxtImg
+        src="/images/award2026/cloud.png"
+        alt=""
+        loading="lazy"
+        class="absolute hidden lg:block top-0 right-0 lg:top-[260px] lg:-right-[210px] z-0 w-[590px] rotate-70"
+      />
+    </div>
   </section>
 </template>
 
