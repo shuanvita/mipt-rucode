@@ -7,6 +7,7 @@ import { AwardFaq } from '~/widgets/award2026/award-faq'
 import { AwardCta } from '~/widgets/award2026/award-cta'
 import { AwardPartners } from '~/widgets/award2026/award-partners'
 import { PeopleSlider } from '~/widgets/people-slider'
+import { StagesTimeline } from '~/widgets/stages-timeline'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import { PeopleSlider } from '~/widgets/people-slider'
     <AwardAbout />
     <AwardParticipants />
     <WhyParticipate />
+    <StagesTimeline />
     <PeopleSlider />
     <AwardPartners />
     <AwardCta />
