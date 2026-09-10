@@ -22,7 +22,7 @@
         >Подать заявку</UiAction
       >
     </div>
-    <NuxtImg
+    <NuxtPicture
       class="hidden h-auto w-full object-contain lg:block"
       src="/images/award2026/hero.png"
       alt=""
