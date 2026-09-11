@@ -15,6 +15,7 @@ const [isMenuOpen, toggleMenu] = useToggle(false)
     <NuxtLink class="max-w-25 lg:max-w-31" to="/">
       <NuxtPicture width="167" height="110" src="logo.svg" alt="Rucode Festival logo" />
     </NuxtLink>
+    <UiAction to="https://yandex.ru" variant="secondary" external>Второй вид</UiAction>
 
     <div class="hidden items-center gap-6 lg:flex">
       <nav class="flex items-center gap-5" aria-label="Основная навигация">
