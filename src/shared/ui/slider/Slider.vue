@@ -31,7 +31,6 @@ const swiperParams = computed(() => ({
   ...props.options,
 }))
 
-
 const swiper = useSwiper(containerRef, swiperParams.value)
 
 defineExpose({ swiper })
