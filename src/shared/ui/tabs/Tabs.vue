@@ -25,7 +25,7 @@ function selectTab(index: number) {
         :key="index"
         type="button"
         :disabled="item.disabled"
-        class="text-[24px] min-w-[305px] lg:min-w-auto cursor-pointer font-extrabold tracking-[5%] rounded-[45px] uppercase py-3 px-11 lgpx-12"
+        class="text-[24px] min-w-[305px] lg:min-w-auto cursor-pointer font-extrabold tracking-[5%] rounded-[45px] uppercase py-3 px-11 lg:px-12"
         :class="[
           activeTab === index
             ? 'bg-(image:--stage-secret-gradient)'

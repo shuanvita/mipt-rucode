@@ -16,7 +16,7 @@ const categories = [
       >Кто может участвовать?</UiHeading
     >
     <div
-      class="rounded-2xl bg-[linear-gradient(180deg,rgba(27,27,27,0.18)_0%,rgba(153,153,153,0.16)_100%)] lg:pt-6 lg:pr-18 lg:pb-13 lg:pl-15"
+      class="rounded-2xl bg-[linear-gradient(180deg,rgba(27,27,27,0.18)_0%,rgba(153,153,153,0.16)_100%)] lg:py-6 lg:pr-18 lg:pl-15"
     >
       <ul class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         <li
@@ -33,7 +33,7 @@ const categories = [
         src="/images/award2026/cloud.png"
         alt=""
         loading="lazy"
-        class="absolute top-70 left-55 z-0 hidden w-[590px] lg:-top-[330px] lg:-left-[200px] lg:block"
+        class="absolute top-70 left-55 z-0 hidden w-[590px] lg:-top-[300px] lg:-left-[200px] lg:block"
       />
       <NuxtPicture
         src="/images/award2026/cloud.png"

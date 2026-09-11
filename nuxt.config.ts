@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: { preset: 'node-server' },
+
   fonts: {
     families: [{ name: 'Montserrat', weights: [300, 400, 500, 600, 700, 800, 900] }],
   },
