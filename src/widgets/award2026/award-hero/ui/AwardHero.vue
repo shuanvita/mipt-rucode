@@ -23,7 +23,7 @@
     <NuxtPicture
       class="hidden h-full w-full object-contain lg:flex lg:justify-center"
       src="/images/award2026/hero.png"
-      alt=""
+      alt="RuCode Festival"
     />
   </section>
 </template>
