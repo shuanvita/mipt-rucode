@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { AwardHero } from '~/widgets/award2026/award-hero'
-import { AwardAbout } from '~/widgets/award2026/award-about'
-import { AwardParticipants } from '~/widgets/award2026/award-participants'
+import { AwardHero } from '~/widgets/award/hero'
+import { AwardAbout } from '~/widgets/award/about'
+import { AwardParticipants } from '~/widgets/award/participants'
 import { WhyParticipate } from '~/widgets/award2026/why-participate'
 import { AwardFaq } from '~/widgets/award2026/award-faq'
 import { AwardCta } from '~/widgets/award2026/award-cta'
