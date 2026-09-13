@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const categories = [
-  { title: 'Авторы образовательного контента' },
-  { title: 'Блогеры и популяризаторы технологий' },
-  { title: 'Эксперты и практикующие специалисты' },
-  { title: 'Преподаватели' },
-  { title: 'Независимые авторы и создатели ИИ-контента' },
+  'Авторы образовательного контента',
+  'Блогеры и популяризаторы технологий',
+  'Эксперты и практикующие специалисты',
+  'Преподаватели',
+  'Независимые авторы и создатели ИИ-контента',
 ]
 </script>
 
@@ -21,28 +21,26 @@ const categories = [
       <ul class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         <li
           v-for="category in categories"
-          :key="category.title"
+          :key="category"
           class="bg-blend-[normal,normal,screen] flex min-h-38.75 items-center justify-center rounded-[20px] bg-(image:--participant-card-bg) p-3 text-center backdrop-blur-sm lg:min-h-57.5"
         >
-          <p class="text-[16px] font-bold tracking-[0.8px] text-white">{{ category.title }}</p>
+          <p class="text-[16px] font-bold tracking-[0.8px] text-white">{{ category }}</p>
         </li>
       </ul>
     </div>
-    <div role="presentation" aria-hidden="true" class="pointer-events-none select-none">
+    <div aria-hidden="true" class="pointer-events-none select-none">
       <NuxtPicture
         src="/images/award2026/cloud.png"
         alt=""
-        loading="lazy"
+        loading="eager"
         class="absolute top-70 left-55 z-0 hidden w-147.5 lg:-top-75 lg:-left-50 lg:block"
       />
       <NuxtPicture
         src="/images/award2026/cloud.png"
         alt=""
-        loading="lazy"
+        loading="eager"
         class="absolute top-0 right-0 z-0 hidden w-147.5 rotate-70 lg:top-65 lg:-right-52.5 lg:block"
       />
     </div>
   </section>
 </template>
-
-<style scoped></style>
