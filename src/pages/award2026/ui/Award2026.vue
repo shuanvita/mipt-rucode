@@ -9,6 +9,8 @@ import { AwardPartners } from '~/widgets/award2026/award-partners'
 import { PeopleSlider } from '~/widgets/people-slider'
 import { StagesTimeline } from '~/widgets/stages-timeline'
 import { NominationsTabs } from '~/widgets/award2026/nominations-tabs'
+
+import { peopleSlider } from '../model/Award2026.data'
 </script>
 
 <template>
@@ -19,7 +21,7 @@ import { NominationsTabs } from '~/widgets/award2026/nominations-tabs'
     <WhyParticipate />
     <NominationsTabs id="nominations" />
     <StagesTimeline id="stages" />
-    <PeopleSlider id="committee" />
+    <PeopleSlider v-bind="peopleSlider" id="committee" />
     <AwardPartners id="partners" />
     <AwardCta />
     <AwardFaq class="mb-10 lg:mb-15" />

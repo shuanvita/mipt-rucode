@@ -1,39 +1,10 @@
 <script setup lang="ts">
 import PersonCard from '~/widgets/people-slider/ui/PersonCard.vue'
-import type { Person } from '~/widgets/people-slider'
+import type { PeopleSliderProps } from '~/widgets/people-slider'
 
-const members: Person[] = [
-  {
-    name: 'Дмитрий Ливанов',
-    text: 'Ректор МФТИ. Председатель Оргкомитета',
-    photo: '/images/livanov.jpg',
-  },
-  {
-    name: 'Алексей Малеев',
-    text: 'Директор Высшей школы программной инженерии МФТИ',
-    photo: '/images/maleev.jpg',
-  },
-  {
-    name: 'Андрей Созыкин',
-    text: 'Специалист по учебно-методической работе, Высшая школа программной инженерии МФТИ',
-    photo: '/images/sozykin.jpg',
-  },
-  {
-    name: 'Екатерина Титова',
-    text: 'Заместитель директора, Центр развития ИТ-образования',
-    photo: '/images/titova.jpg',
-  },
-  {
-    name: 'Игорь Красиков',
-    text: 'Начальник, Управление информационной политики МФТИ',
-    photo: '/images/krasikov.jpeg',
-  },
-  {
-    name: 'Егор Быковский',
-    text: 'Директор, Центр научной коммуникации МФТИ',
-    photo: '/images/bykovskiy.png',
-  },
-]
+const uniqueId = useId()
+const prevClass = `swiper-navigation-prev-${uniqueId}`
+const nextClass = `swiper-navigation-next-${uniqueId}`
 
 const sliderOptions = {
   spaceBetween: 29,
@@ -41,8 +12,8 @@ const sliderOptions = {
   centeredSlides: true,
   navigation: {
     enabled: true,
-    prevEl: '.swiper-navigation-prev-org-committee',
-    nextEl: '.swiper-navigation-next-org-committee',
+    prevEl: `.${prevClass}`,
+    nextEl: `.${nextClass}`,
   },
   breakpoints: {
     640: {
@@ -59,18 +30,16 @@ const sliderOptions = {
     },
   },
 }
+
+defineProps<PeopleSliderProps>()
 </script>
 
 <template>
   <section class="relative container flex flex-col items-center space-y-5 lg:space-y-10">
-    <UiHeading class="text-purple-primary text-center" tag="h2">Организационный комитет</UiHeading>
-    <UiText class="max-w-146 text-center"
-      >Определяет номинантов Премии по итогам отборочного тура. Оказывает содействие в привлечении
-      партнеров и спонсоров. Утверждает состава Экспертного совета. Оказывает содействие в
-      организации Церемонии награждения.</UiText
-    >
+    <UiHeading class="text-purple-primary text-center" tag="h2">{{ title }}</UiHeading>
+    <UiText class="max-w-146 text-center">{{ description }}</UiText>
     <div class="relative mx-auto w-full max-w-254.5">
-      <UiSlider :items="members" :options="sliderOptions" class="pt-4">
+      <UiSlider :items="people" :options="sliderOptions" class="pt-4">
         <template #default="{ item }">
           <PersonCard :photo="item.photo" :name="item.name" :text="item.text" />
         </template>
@@ -78,7 +47,7 @@ const sliderOptions = {
       <button
         type="button"
         aria-label="Предыдущий слайд"
-        class="swiper-navigation-prev-org-committee text-purple-primary hover:text-purple-primary/80 absolute top-1/2 left-0 z-10 grid size-12.5 -translate-y-1/2 place-items-center transition-colors not-disabled:cursor-pointer min-[1200px]:-left-15"
+        :class="[prevClass, 'text-purple-primary hover:text-purple-primary/80 absolute top-1/2 left-0 z-10 grid size-12.5 -translate-y-1/2 place-items-center transition-colors not-disabled:cursor-pointer min-[1200px]:-left-15']"
       >
         <UiSvg name="arrow-left" />
       </button>
@@ -86,7 +55,7 @@ const sliderOptions = {
       <button
         type="button"
         aria-label="Следующий слайд"
-        class="swiper-navigation-next-org-committee text-purple-primary hover:text-purple-primary/80 absolute top-1/2 right-0 z-10 grid size-12.5 -translate-y-1/2 place-items-center transition-colors not-disabled:cursor-pointer min-[1200px]:-right-15"
+        :class="[nextClass, 'text-purple-primary hover:text-purple-primary/80 absolute top-1/2 right-0 z-10 grid size-12.5 -translate-y-1/2 place-items-center transition-colors not-disabled:cursor-pointer min-[1200px]:-right-15']"
       >
         <UiSvg name="arrow-right" />
       </button>
@@ -96,5 +65,3 @@ const sliderOptions = {
     />
   </section>
 </template>
-
-<style scoped></style>
